@@ -1,0 +1,704 @@
+@font-face {
+    font-family: MADE Tommy Soft Lighter;
+    src: url('../fontes/MADE\ Tommy\ Soft\ Light.otf') format('truetype');
+}
+
+@font-face {
+    font-family: MADE Tommy Soft Bold;
+    src: url('../fontes/MADE\ Tommy\ Soft\ Bold.otf') format('truetype');
+}
+
+@font-face {
+    font-family: MADE Tommy Soft Normal;
+    src: url('../fontes/MADE\ Tommy\ Soft\ Medium.otf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: MADE Tommy Soft;
+    width: 100%;
+    margin: auto;
+    font-size: 16px;
+    background: #F0F0F0 url(../img/background.jpg);
+    overflow-x: hidden;
+}
+
+/* Cabeçalho */
+.topo1 {
+    background-color: #2C2C2C;
+    color: #969696;
+    height: 46px;
+}
+
+.topo1 img {
+    height: 1em;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+}
+
+.topo1 p {
+    display: inline;
+    font-size: 1em;
+    margin-right: 70px;
+}
+
+.topo1 a, .topo1 a:visited {
+    color: #969696;
+}
+
+.cont-top1 {
+    width: 80%;
+    max-width: 1440px;
+    font-weight: lighter;
+    display: flex;
+    margin: auto;
+    padding-left: 20px;
+}
+
+.cont-top1 div {
+    line-height: 46px;
+}
+
+/* Logo e Navbar */
+
+.logo {
+    display: inline-block;
+    width: 100px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.logo-line {
+    background-color: #EF4136;
+    height: 2px;
+    width: 1920px;
+    border: none;
+    position: relative;
+    top: -9px;
+    transform: translateX(-92.6%);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #015EC6;
+    height: 80px;
+}
+  
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+  
+.nav-list li {
+    margin-left: 32px;
+}
+
+.nav-list a {
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: underline;
+    text-decoration-color: #EF4136;
+    text-decoration-thickness: 3px;
+    transition: text-decoration 0.2s;
+}
+
+.nav-list a:hover {
+    text-decoration-color: white;
+}
+  
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+  
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+.banner {
+    text-align: center;
+}
+
+.banner img {
+    width: 80%;
+    max-width: 1440px;
+}
+
+/* Menu hamburguer */
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: white;
+    margin: 8px;
+}
+
+@media screen and (max-width: 900px) {
+    .nav-list {
+        position: absolute;
+        top: 124px;
+        right: 0;
+        width: 100vw;
+        height: 60vh;
+        background: #015EC6;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.400);
+      }
+      .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+      }
+      .mobile-menu {
+        display: block;
+      }
+}
+
+.nav-list.active {
+    transform: translateX(0);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+
+/*************************** 
+    Fim do cabeçalho
+****************************/
+
+.red {
+    color: #EF4136;
+}
+
+/* Estilo servicos */
+
+.servicos {
+    height: 760px;
+    max-width: 1440px;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+}
+
+.servicos h2 {
+    color: #005BCB;
+    font-size: 1.6em;
+    font-weight: bolder;
+    margin-bottom: 50px;
+}
+
+.cont-cards {
+    max-width: 1440px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 280px;
+    max-width: 280px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.404);
+    margin: 20px 20px;
+    flex-grow: 1;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card-img {
+    width: 280px;
+    height: 224px;
+    align-content: center;
+}
+
+.card-img img {
+    height: 160px;
+    width: 196px;
+}
+
+.card-txt {
+    width: 280px;
+    height: 250px;
+    background-color: #005BCB;
+    color: white;
+    border-radius: 0 0 20px 20px;
+    align-content: center;
+}
+
+.card-txt h3 {
+    font-size: 1.4em;
+    margin-bottom: 30px;
+}
+
+.card-txt p {
+    width: 246px;
+    margin: 0 auto 30px auto;
+}
+
+.card-txt button {
+    width: 200px;
+    height: 45px;
+    border: none;
+    border-radius: 20px;
+    background-color: #EF4136;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+.card-txt button:hover {
+    cursor: pointer;
+    border: 3px solid #EF4136;
+    background-color: white;
+    color: #EF4136;
+}
+
+/* Ajuste de responsividade */
+
+@media screen and (max-width: 1440px) {
+    .servicos {
+        width: 700px;
+        height: 1200px;
+    }
+}
+
+/***************************
+    Fim estilo dos serviços
+****************************/
+
+/* Estilo do Conheça */
+
+.conheca {
+    height: 540px;
+    background-color: #FA3328;
+    color: white;
+    align-content: center;
+}
+
+.cont-conheca { 
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-conheca h2 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+}
+
+.cont-conheca button {
+    width: 240px;
+    height: 52px;
+    border: 3px solid white;
+    border-radius: 30px;
+    background-color: #FA3328;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-top: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.conheca button:hover {
+    background-color: white;
+    color: #FA3328;
+    cursor: pointer;
+}
+
+.cont-conheca div {
+    width: 430px;
+    margin-right: 130px;
+}
+
+.cont-conheca img {
+    width: 640px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.400);
+}
+
+@media screen and (max-width: 1440px) {
+    .conheca {
+        height: 760px;
+    }
+
+    .cont-conheca {
+        width: 80%;
+    }
+
+    .cont-conheca div {
+        width: 640px;
+        margin: 0 0 60px;
+    }
+}
+
+/******************* 
+    Fim aba conheça
+********************/
+
+/* Estilo da aba contato */
+
+.mensagem {
+    height: 560px;
+    background-color: #005BCB;
+    color: white;
+    align-content: center;
+}
+
+.cont-mensagem {
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-mensagem form {
+    width: 640px;
+    text-align: center;
+    margin-right: 100px;
+}
+
+.cont-mensagem input {
+    width: 600px;
+    height: 60px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.10);
+    padding: 0 20px;
+    color: white;
+    font-size: 1em;
+    margin-bottom: 10px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    font-family: MADE Tommy Soft;
+}
+
+.cont-mensagem input::placeholder {
+    color: white;
+}
+
+.cont-mensagem textarea {
+    width: 600px;
+    max-width: 600px;
+    min-width: 600px;
+    height: 140px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.10);
+    font-size: 1em;
+    overflow-y: hidden;
+    margin-bottom: 10px;
+    color: white;
+    border: 2px solid transparent;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    font-family: MADE Tommy Soft;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.cont-mensagem textarea::placeholder {
+    color: white;
+}
+
+.cont-mensagem button {
+    width: 310px;
+    height: 52px;
+    border-radius: 30px;
+    border: 2px solid white;
+    background-color: #005BCB;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cont-mensagem button:hover {
+    background-color: white;
+    color: #005BCB;
+}
+
+.cont-mensagem h2 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+}
+
+.cont-mensagem p {
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1440px) {
+    .mensagem {
+        height: 800px;
+    }
+
+    .cont-mensagem {
+        max-width: 1000px;
+        width: 80%;
+    }
+
+    .cont-mensagem form {
+        margin-right: 0;
+    }
+
+    .cont-mensagem div {
+        width: 640px;
+        text-align: end;
+        margin-bottom: 20px;
+    }
+
+    .cont-mensagem p {
+        width: 540px;
+        margin: 0 0 20px auto;
+    }
+}
+
+/*******************
+    Fim aba contato
+********************/
+
+/* Estilo aba representações */
+
+.representacoes {
+    height: 330px;
+    background-color: #005BCB;
+    color: white;
+    text-align: center;
+    align-content: center;
+}
+
+.representacoes h2 {
+    font-size: 1.6em;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.cont-marcas {
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cont-marcas figure {
+    width: 150px;
+    min-width: 150px;
+    height: 150px;
+    background-color: white;
+    margin: 10px 10px;
+    border-radius: 20px 0;
+    align-content: center;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.400);
+    transition: transform 0.3s;
+}
+
+.cont-marcas figure:hover {
+    transform: scale(1.1);
+}
+
+.cont-marcas img {
+    width: 130px;
+    height: 130px;
+}
+
+@media screen and (max-width: 1440px) {
+    .representacoes {
+        height: 480px;
+    }
+
+    .cont-marcas {
+        max-width: 800px;
+        width: 80%;
+    }
+
+    .cont-marcas figure {
+        width: 120px;
+        min-width: 120px;
+        height: 120px;
+    }
+
+    .cont-marcas img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/*****************************
+    Fim da aba representações
+******************************/
+
+/* Estilo rodapé */
+
+.cont-info {
+    height: 280px;
+    background-color: #00448F;
+    align-content: center;
+}
+
+.rod-info {
+    color: #D9D9D9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.suporte {
+    height: 162px;
+    text-align: center;
+}
+
+.suporte img {
+    width: 140px;
+    height: 140px;
+    border-radius: 10px;
+    border: 1px solid #015EC6;
+}
+
+.redes {
+    height: 162px;
+    text-align: center;
+    margin: 0 160px;
+}
+
+.redes img {
+    border: 1px solid #015EC6;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.contato{
+    height: 162px;
+}
+
+.contato a {
+    color: #D9D9D9;
+}
+
+.contato a > p {
+    display: inline;
+}
+
+.contato img {
+    height: 16px;
+}
+
+.endereco {
+    margin-top: 30px;
+}
+
+.direitos {
+    height: 50px;
+    background-color: #002A5F;
+    color: white;
+    text-align: center;
+    align-content: center;
+}
+
+.direitos p {
+    display: inline;
+}
+
+.logow {
+    height: 16px;
+    position: absolute;
+    right: 20px ;
+}
+
+@media screen and (max-width: 1440px) {
+    .cont-info {
+        height: 240px;
+    }
+
+    .rod-info {
+        max-width: 640px;
+        width: 80%;
+        margin: auto;
+    }
+
+    .suporte img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .redes {
+        margin: 0 80px;
+    }
+
+    .redes img {
+        width: 50px;
+        margin: 5px;
+    }
+
+    .direitos {
+        font-size: 0.8em;
+    }
+}
+
+/*********************
+    Fim estilo rodapé
+**********************/

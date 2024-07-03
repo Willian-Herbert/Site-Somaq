@@ -1,0 +1,120 @@
+@font-face {
+    font-family: MADE Tommy Soft;
+    src: url('../fontes/MADE\ Tommy\ Soft\ Light\ PERSONAL\ USE.otf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: MADE Tommy Soft;
+    width: 100%;
+    max-width: 1920px;
+    margin: auto;
+    font-size: 16px;
+    background: #F0F0F0 url(../img/background.jpg);
+}
+
+/* Cabeçalho */
+.topo1 {
+    background-color: #2C2C2C;
+    color: #969696;
+    height: 46px;
+}
+
+.topo1 img {
+    height: 1em;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+}
+
+.topo1 p {
+    display: inline;
+    font-size: 1em;
+    margin-right: 70px;
+}
+
+.topo1 a, .topo1 a:visited {
+    color: #969696;
+}
+
+.cont-top1 {
+    width: 1440px;
+    font-weight: bold;
+    display: flex;
+    margin: auto;
+    padding-left: 20px;
+}
+
+.cont-top1 div {
+    line-height: 46px;
+}
+
+/* Logo e Navbar */
+
+.topo2 {
+    height: 80px;
+    background-color: #015EC6;
+    color: white;
+    align-content: center;
+}
+
+.cont-top2 {
+    width: 1440px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.topo2 img {
+    margin: 10px 0;
+    height: 60px;
+    float: left;
+}
+
+.logo-line {
+    background-color: #EF4136;
+    height: 2px;
+    border: none;
+    position: relative;
+    top: 52px;
+    transform: translateX(-98%);
+}
+
+.topo2 nav {
+    float: right;
+}
+
+.topo2 a {
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+    line-height: 80px;
+}
+
+.topo2 li {
+    display: inline;
+    margin: 0px 0px 0px 60px;
+    text-decoration: underline;
+    text-decoration-color: #EF4136;
+    text-decoration-thickness: 3px;
+    transition: 0.3s;
+}
+
+.topo2 li:hover {
+    text-decoration-color: white;
+}
+
+.banner img {
+    width: 1920px;
+}
