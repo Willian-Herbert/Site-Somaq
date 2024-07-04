@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./estilos/home.css">
     <link rel="shortcut icon" href="./img/logos/logosmq.png" type="image/x-icon">
+    <script defer src="./script/mobile-navbar.js"></script>
+    <script defer src="./script/envio-form.js"></script>
     <title>Somaq Automação</title>
 </head>
 <body>
@@ -36,10 +38,10 @@
                   <div class="line3"></div>
                 </div>
                 <ul class="nav-list">
-                  <li><a href="#">Início</a></li>
-                  <li><a href="#">Sobre Nós</a></li>
-                  <li><a href="#">Nossos Serviços</a></li>
-                  <li><a href="#">Contato</a></li>
+                  <li><a href="./index.html">Início</a></li>
+                  <li><a href="./sobre.html">Sobre Nós</a></li>
+                  <li><a href="./servicos.html">Nossos Serviços</a></li>
+                  <li><a href="./contato.html">Contato</a></li>
                 </ul>
               </nav>
         </section>
@@ -138,13 +140,13 @@
                     <p><strong>Horário de atendimento:</strong> Seg - Sex (08:00 as 11:50) e (13:30 as 18:05), Sábados (08:00 as 11:50).</p>
                 </div>
 
-                <form action="https://formsubmit.co/ajax/willian.g.h@hotmail.com" method="post">
+                <form action="https://formsubmit.co/ajax/willian.g.h@hotmail.com" method="POST" data-form>
 
                     <input type="text" name="nome" id="nome" placeholder="Nome" required>
                     <input type="email" name="email" id="email" placeholder="Email" required>
                     <input type="tel" name="fone" id="fone" placeholder="Telefone" required>
-                     <textarea name="mensagem" id="mensagem" placeholder="Deixe a sua mensagem" required></textarea>
-                    <button type="submit">ENVIAR MENSAGEM</button>
+                    <textarea name="mensagem" id="mensagem" placeholder="Deixe a sua mensagem" required></textarea>
+                    <button type="submit" data-button>ENVIAR MENSAGEM</button>
     
                 </form>
             </div>
@@ -213,8 +215,6 @@
                     <img class="logow" src="./img/logos/logowhite.png">
             </div>
         </section>
-
-        <script src="./script/mobile-navbar.js"></script>
     </main>
 </body>
 </html>

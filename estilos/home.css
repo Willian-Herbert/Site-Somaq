@@ -163,7 +163,7 @@ nav {
 @media screen and (max-width: 900px) {
     .nav-list {
         position: absolute;
-        top: 124px;
+        top: 80px;
         right: 0;
         width: 100vw;
         height: 60vh;
@@ -181,6 +181,10 @@ nav {
       }
       .mobile-menu {
         display: block;
+      }
+
+      .topo1 {
+        display: none;
       }
 }
 
@@ -315,6 +319,14 @@ nav {
     }
 }
 
+@media screen and (max-width: 900px) {
+    .servicos {
+        width: 80%;
+        height: auto;
+        padding: 30px 0;
+    }
+}
+
 /***************************
     Fim estilo dos serviços
 ****************************/
@@ -382,7 +394,26 @@ nav {
 
     .cont-conheca div {
         width: 640px;
-        margin: 0 0 60px;
+        margin: 0 0 30px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .conheca {
+        height: auto;
+        padding: 30px 0;
+    }
+
+    .conheca div {
+        width: 80%;
+    }
+
+    .cont-conheca figure {
+        width: 80%;
+    }
+
+    .cont-conheca img {
+        width: 100%;
     }
 }
 
@@ -480,6 +511,12 @@ textarea:focus {
     color: #005BCB;
 }
 
+.cont-mensagem button:disabled {
+    color: #00448F;
+    border-color: #00448F;
+    background-color: #015EC6;
+}
+
 .cont-mensagem h2 {
     font-size: 1.6em;
     margin-bottom: 20px;
@@ -492,7 +529,8 @@ textarea:focus {
 
 @media screen and (max-width: 1440px) {
     .mensagem {
-        height: 800px;
+        height: auto;
+        padding: 30px 0;
     }
 
     .cont-mensagem {
@@ -513,6 +551,35 @@ textarea:focus {
     .cont-mensagem p {
         width: 540px;
         margin: 0 0 20px auto;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .cont-mensagem div {
+        width: 80%;
+    }
+
+    .cont-mensagem p {
+        width: auto;
+    }
+
+    .cont-mensagem form {
+        width: 80%;
+    }
+
+    .cont-mensagem input {
+        width: 90%;
+    }
+
+    .cont-mensagem textarea {
+        width: 90%;
+        min-width: auto;
+    }
+
+    .cont-mensagem button {
+        max-width: 310px;
+        width: 110%;
+        font-size: 1em;
     }
 }
 
@@ -567,7 +634,8 @@ textarea:focus {
 
 @media screen and (max-width: 1440px) {
     .representacoes {
-        height: 480px;
+        height: auto;
+        padding: 30px 0;
     }
 
     .cont-marcas {
@@ -696,6 +764,31 @@ textarea:focus {
 
     .direitos {
         font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .cont-info {
+        height: auto;
+    }
+
+    .rod-info {
+        flex-direction: column-reverse;
+    }
+
+    .rod-info div {
+        height: auto;
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    .direitos {
+        height: 30px;
+        font-size: 0.6em;
+    }
+
+    .logow {
+        height: 0.7em;
     }
 }
 
