@@ -26,13 +26,18 @@ li {
     list-style: none;
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 body {
     font-family: MADE Tommy Soft;
     width: 100%;
     margin: auto;
     font-size: 16px;
     background: #F0F0F0 url(../img/background.jpg);
-    overflow-x: hidden;
+    position: relative;
 }
 
 /* Cabeçalho */

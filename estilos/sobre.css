@@ -1,6 +1,16 @@
 @font-face {
-    font-family: MADE Tommy Soft;
-    src: url('../fontes/MADE\ Tommy\ Soft\ Light\ PERSONAL\ USE.otf') format('truetype');
+    font-family: MADE Tommy Soft Lighter;
+    src: url('../fontes/MADE\ Tommy\ Soft\ Light.otf') format('truetype');
+}
+
+@font-face {
+    font-family: MADE Tommy Soft Bold;
+    src: url('../fontes/MADE\ Tommy\ Soft\ Bold.otf') format('truetype');
+}
+
+@font-face {
+    font-family: MADE Tommy Soft Normal;
+    src: url('../fontes/MADE\ Tommy\ Soft\ Medium.otf') format('truetype');
 }
 
 * {
@@ -16,10 +26,18 @@ li {
     list-style: none;
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 body {
     font-family: MADE Tommy Soft;
     width: 100%;
+    margin: auto;
     font-size: 16px;
+    background: #F0F0F0 url(../img/background.jpg);
+    position: relative;
 }
 
 /* Cabeçalho */
@@ -47,10 +65,12 @@ body {
 }
 
 .cont-top1 {
-    width: 1440px;
-    font-weight: bold;
+    width: 80%;
+    max-width: 1440px;
+    font-weight: lighter;
     display: flex;
     margin: auto;
+    padding-left: 20px;
 }
 
 .cont-top1 div {
@@ -59,48 +79,420 @@ body {
 
 /* Logo e Navbar */
 
-.topo2 {
-    height: 80px;
-    background-color: #015EC6;
-    color: white;
-    align-content: center;
+.logo {
+    display: inline-block;
+    width: 100px;
 }
 
-.cont-top2 {
-    width: 1440px;
-    margin: auto;
-}
-
-.topo2 img {
-    margin: 10px 0;
-    height: 60px;
-    float: left;
+.logo img {
+    height: 40px;
 }
 
 .logo-line {
     background-color: #EF4136;
     height: 2px;
+    width: 1920px;
     border: none;
     position: relative;
-    top: 52px;
-    transform: translateX(-98%);
+    top: -9px;
+    transform: translateX(-92.6%);
 }
 
-.topo2 nav {
-    float: right;
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #015EC6;
+    height: 80px;
+}
+  
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+  
+.nav-list li {
+    margin-left: 32px;
 }
 
-.topo2 a {
+.nav-list a {
     color: white;
     font-weight: bold;
-    font-size: 1.3em;
-    line-height: 80px;
-}
-
-.topo2 li {
-    display: inline;
-    margin: 0px 30px;
+    font-size: 1.1em;
     text-decoration: underline;
     text-decoration-color: #EF4136;
     text-decoration-thickness: 3px;
+    transition: text-decoration 0.2s;
 }
+
+.nav-list a:hover {
+    text-decoration-color: white;
+}
+  
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+  
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+.banner {
+    text-align: center;
+}
+
+.banner img {
+    width: 80%;
+    max-width: 1440px;
+}
+
+/* Menu hamburguer */
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: white;
+    margin: 8px;
+}
+
+@media screen and (max-width: 900px) {
+    .nav-list {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100vw;
+        height: 60vh;
+        background: #015EC6;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.400);
+      }
+      .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+      }
+      .mobile-menu {
+        display: block;
+      }
+
+      .topo1 {
+        display: none;
+      }
+}
+
+.nav-list.active {
+    transform: translateX(0);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+
+/*************************** 
+    Fim do cabeçalho
+****************************/
+
+.red {
+    color: #EF4136;
+}
+
+.hide {
+    display: none;
+}
+
+/* Estilo do conteudo */
+
+.conteudo {
+    padding: 50px 0;
+}
+
+/* Título */
+
+.titulo {
+    max-width: 380px;
+    width: 380px;
+    text-align: center;
+    margin: 0 auto 30px;
+}
+
+.titulo h1 {
+    font-size: 1.6em;
+    color: #015EC6;
+}
+
+.title-line {
+    position: relative;
+    width: 1920px;
+    height: 2px;
+    background-color: #EF4136;
+    border: none;
+    left: 61%;
+    z-index: -1;
+}
+
+@media screen and (max-width: 900px) {
+    .titulo h1 {
+        font-size: 1.2em;
+    }
+
+    .title-line {
+        left: 58%;
+    }
+}
+
+/* Texto */
+
+.txt {
+    width: 80%;
+    max-width: 920px;
+    margin: 0 auto 30px;
+}
+
+.txt p {
+    font-size: 1em;
+    color: #3C3C3C;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-align: justify;
+    line-height: 24px;
+}
+
+/******************** 
+    Fim estilo texto
+*********************/
+
+/* Estilo dos cards */
+
+.cards {
+    width: 80%;
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: #015EC6;
+    width: 400px;
+    border-radius: 20px;
+    padding-bottom: 30px;
+    margin: 60px 30px 0;
+}
+
+.icone {
+    position: relative;
+    left: 50%;
+    transform: translateX(-42px);
+    top: -40px;
+    background-color: #002A5F;
+    width: 80px;
+    height: 80px;
+    border-radius: 45px;
+    text-align: center;
+    align-content: center;
+    box-shadow: 3px 1px white;
+}
+
+.icone img {
+    width: 60px;
+}
+
+.card-txt {
+    max-width: 320px;
+    width: 90%;
+    margin: auto;
+    color: white;
+}
+
+.card-txt h3 {
+    text-align: center;
+    margin: -30px 0 20px;
+    font-size: 1.2em;
+}
+
+.card-txt p {
+    font-size: 1em;
+    line-height: 24px;
+    text-align: justify;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 900px) {
+    .card {
+        margin: 60px 0 0;
+    }
+}
+
+/******************** 
+    Fim estilo cards
+*********************/
+
+/* Estilo rodapé */
+
+.cont-info {
+    height: 280px;
+    background-color: #00448F;
+    align-content: center;
+}
+
+.rod-info {
+    color: #D9D9D9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.suporte {
+    height: 162px;
+    text-align: center;
+}
+
+.suporte img {
+    width: 140px;
+    height: 140px;
+    border-radius: 10px;
+    border: 1px solid #015EC6;
+}
+
+.redes {
+    height: 162px;
+    text-align: center;
+    margin: 0 160px;
+}
+
+.redes img {
+    border: 1px solid #015EC6;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.contato{
+    height: 162px;
+}
+
+.contato a {
+    color: #D9D9D9;
+}
+
+.contato a > p {
+    display: inline;
+}
+
+.contato img {
+    height: 16px;
+}
+
+.endereco {
+    margin-top: 30px;
+}
+
+.direitos {
+    height: 50px;
+    background-color: #002A5F;
+    color: white;
+    text-align: center;
+    align-content: center;
+}
+
+.direitos p {
+    display: inline;
+}
+
+.logow {
+    height: 16px;
+    position: absolute;
+    right: 20px ;
+}
+
+@media screen and (max-width: 1440px) {
+    .cont-info {
+        height: 240px;
+    }
+
+    .rod-info {
+        max-width: 640px;
+        width: 80%;
+        margin: auto;
+    }
+
+    .suporte img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .redes {
+        margin: 0 80px;
+    }
+
+    .redes img {
+        width: 50px;
+        margin: 5px;
+    }
+
+    .direitos {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .cont-info {
+        height: auto;
+    }
+
+    .rod-info {
+        flex-direction: column-reverse;
+    }
+
+    .rod-info div {
+        height: auto;
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    .direitos {
+        height: 30px;
+        font-size: 0.6em;
+    }
+
+    .logow {
+        height: 0.7em;
+    }
+}
+
+/*********************
+    Fim estilo rodapé
+**********************/
