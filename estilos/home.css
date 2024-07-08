@@ -1,18 +1,3 @@
-@font-face {
-    font-family: MADE Tommy Soft Lighter;
-    src: url('../fontes/MADE\ Tommy\ Soft\ Light.otf') format('truetype');
-}
-
-@font-face {
-    font-family: MADE Tommy Soft Bold;
-    src: url('../fontes/MADE\ Tommy\ Soft\ Bold.otf') format('truetype');
-}
-
-@font-face {
-    font-family: MADE Tommy Soft Normal;
-    src: url('../fontes/MADE\ Tommy\ Soft\ Medium.otf') format('truetype');
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -32,7 +17,7 @@ body {
 }
 
 body {
-    font-family: MADE Tommy Soft;
+    font-family: 'Roboto', sans-serif;
     width: 100%;
     margin: auto;
     font-size: 16px;
@@ -67,7 +52,6 @@ body {
 .cont-top1 {
     width: 80%;
     max-width: 1440px;
-    font-weight: lighter;
     display: flex;
     margin: auto;
     padding-left: 20px;
@@ -463,7 +447,7 @@ nav {
     margin-bottom: 10px;
     border: 2px solid transparent;
     transition: border-color 0.3s, box-shadow 0.3s;
-    font-family: MADE Tommy Soft;
+    font-family: 'Roboto', sans-serif;
 }
 
 .cont-mensagem input::placeholder {
@@ -484,7 +468,7 @@ nav {
     color: white;
     border: 2px solid transparent;
     transition: border-color 0.3s, box-shadow 0.3s;
-    font-family: MADE Tommy Soft;
+    font-family: 'Roboto', sans-serif;
 }
 
 input:hover,
