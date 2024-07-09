@@ -1,3 +1,17 @@
+@font-face {
+    font-family: Tommy;
+    src: url(../fontes/MADE\ Tommy\ Soft\ Regular.otf) format('Opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Tommy;
+    src: url(../fontes/MADE\ Tommy\ Soft\ Bold.otf) format('Opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +31,7 @@ body {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Tommy', 'roboto', sans-serif;
     width: 100%;
     margin: auto;
     font-size: 16px;
@@ -213,6 +227,178 @@ nav {
 }
 
 /* Estilo do conteudo */
+
+/* Informações */
+
+.cont-conteudo {
+    width: 80%;
+    max-width: 1440px;
+    padding: 30px 0;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+h1 {
+    color: #015EC6;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.info {
+    width: 40%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.info p {
+    color: #3C3C3C;
+    font-weight: 600;
+}
+
+.titulo h2 {
+    color: #015EC6;
+}
+
+.titulo hr {
+    border: none;
+    height: 3px;
+    width: 1920px;
+    background-color: #EF4136;
+    position: relative;
+    transform: translateX(-96%);
+    z-index: -1;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    color: #3C3C3C;
+    margin: 10px 0;
+}
+
+.link img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+/* Formulário */
+
+form {
+    padding: 40px 0;
+    width: 50%;
+    text-align: center;
+    background: linear-gradient(135deg, #015EC6, #002E60);
+    border-radius: 30px;
+}
+
+input {
+    width: 80%;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.10);
+    padding: 0 20px;
+    color: white;
+    font-size: 1em;
+    margin-bottom: 10px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    font-family: 'Tommy', 'roboto', sans-serif;
+}
+
+input::placeholder {
+    color: white;
+}
+
+textarea {
+    width: 80%;
+    height: 140px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.10);
+    font-size: 1em;
+    overflow-y: hidden;
+    margin-bottom: 30px;
+    color: white;
+    border: 2px solid transparent;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    font-family: 'Tommy', 'roboto', sans-serif;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+textarea::placeholder {
+    color: white;
+}
+
+button {
+    width: 60%;
+    height: 52px;
+    border-radius: 30px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: white;
+    color: #005BCB;
+}
+
+button:disabled {
+    color: #00448F;
+    border-color: #00448F;
+    background-color: #015EC6;
+}
+
+/* Maps */
+
+.mapa {
+    margin-bottom: -4px;
+}
+
+@media screen and (max-width: 900px) {
+    .cont-conteudo {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .info {
+        width: 100%;
+        text-align: center;
+    }
+
+    .titulo hr {
+        transform: translateX(-100%);
+        left: 50%;
+    }
+
+    .link {
+        justify-content: center;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    button {
+        font-size: 1em;
+    }
+}
 
 /* Estilo rodapé */
 

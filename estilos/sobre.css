@@ -1,3 +1,17 @@
+@font-face {
+    font-family: Tommy;
+    src: url(../fontes/MADE\ Tommy\ Soft\ Regular.otf) format('Opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Tommy;
+    src: url(../fontes/MADE\ Tommy\ Soft\ Bold.otf) format('Opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +31,7 @@ body {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Tommy', sans-serif;
     width: 100%;
     margin: auto;
     font-size: 16px;

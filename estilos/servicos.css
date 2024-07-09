@@ -1,3 +1,17 @@
+@font-face {
+    font-family: Tommy;
+    src: url(../fontes/MADE\ Tommy\ Soft\ Regular.otf) format('Opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Tommy;
+    src: url(../fontes/MADE\ Tommy\ Soft\ Bold.otf) format('Opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +31,7 @@ body {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Tommy', sans-serif;
     width: 100%;
     margin: auto;
     font-size: 16px;
@@ -281,7 +295,7 @@ h1 {
 .impressora,
 .sistema,
 .ponto {
-    padding: 50px 0;
+    margin: 80px 0;
 }
 
 /* Balança */
@@ -340,7 +354,7 @@ h1 {
 /* Ponto */
 
 .ponto {
-    padding-bottom: 100px;
+    margin-bottom: 100px;
 }
 
 .cont-ponto img {
@@ -368,11 +382,11 @@ h1 {
     .balanca,
     .impressora,
     .sistema {
-        padding: 30px 0;
+        margin: 60px 0;
     }
 
     .ponto {
-        padding: 30px 0 60px;
+        margin: 60px 0 100px;
     }
 
     .cont-title h2 {
