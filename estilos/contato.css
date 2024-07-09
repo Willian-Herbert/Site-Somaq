@@ -293,6 +293,8 @@ form {
     text-align: center;
     background: linear-gradient(135deg, #015EC6, #002E60);
     border-radius: 30px;
+    z-index: 5;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
 }
 
 input {
@@ -367,7 +369,10 @@ button:disabled {
 /* Maps */
 
 .mapa {
-    margin-bottom: -4px;
+    position: relative;
+    top: -50px;
+    margin-bottom: -54px;
+    z-index: 2;
 }
 
 @media screen and (max-width: 900px) {
