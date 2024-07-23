@@ -262,29 +262,42 @@ nav {
     }
 
     .title-line {
-        left: 58%;
+        left: 6%;
     }
 }
 
 /* Estilo da aba ideal */
 
 .cont-ideal {
+    margin-top: 80px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 .cont-ideal div {
-    width: 40%;
     max-height: 500px;
+    width: 40%;
     align-content: center;
     text-align: center;
 }
 
-.background {
-    height: 500px;
-    background-color: #EF4136;
+.cont-img1 {
     position: relative;
+}
+
+.background {
+    height: 120%;
+    max-height: 500px;
+    width: 1920px;
+    border: none;
+    border-radius: 0 250px 250px 0;
+    background-color: #EF4136;
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    transform: translateY(-50%);
+    z-index: -1;
 }
 
 .img-desk {
@@ -297,6 +310,131 @@ nav {
     width: 90%;
 }
 
+@media screen and (max-width: 900px) {
+    .cont-ideal {
+        flex-direction: column;
+    }
+
+    .cont-ideal div {
+        width: auto;
+    }
+
+    .cont-img1 {
+        margin-bottom: 70px;
+    }
+}
+
+/* Estilo aba mobile */
+
+.cont-mobile {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cont-mobile div {
+    max-height: 500px;
+    width: 40%;
+    align-content: center;
+}
+
+.cont-img2 {
+    position: relative;
+    text-align: center;
+}
+
+.background2 {
+    height: 120%;
+    max-height: 500px;
+    width: 1920px;
+    border: none;
+    border-radius: 250px 0 0 250px;
+    background-color: #015EC6;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+.img-mob {
+    max-width: 390px;
+    width: 70%;
+}
+
+@media screen and (max-width: 900px) {
+    .cont-mobile {
+        flex-direction: column;
+    }
+
+    .cont-mobile div {
+        width: auto;
+    }
+
+    .cont-img2 {
+        margin-bottom: 70px;
+    }
+}
+
+.mobile-vantagens {
+    color: #002A5F;
+    text-align: left;
+    padding: 20px;
+    width: 90%;
+    max-width: 480px;
+}
+
+.mobile-vantagens p {
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+.mobile-card {
+    margin-top: 10px;
+    display: flex;
+}
+
+.mobile-card p {
+    color: white;
+    background-color: #015EC6;
+    padding: 8px;
+    border-radius: 5px;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+/* Estilo da aba benefícios */
+
+.beneficios {
+    margin: 80px 0;
+    text-align: center;
+    color: #002A5F;
+}
+
+.cont-beneficios {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.cont-beneficios img {
+    width: 26%;
+    min-width: 300px;
+    margin: 20px 10px 0;
+}
+
+@media screen and (max-width: 425px) {
+    .cont-beneficios img {
+        margin: 20px 0 0;
+        min-width: 0;
+        width: 100%;
+    }
+}
 
 /* Estilo rodapé */ 
 
