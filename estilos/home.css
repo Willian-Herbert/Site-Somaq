@@ -149,6 +149,9 @@ nav {
     max-width: 1920px;
 }
 
+.banner-mobile {
+    display: none;
+}
 /* Menu hamburguer */
 
 .mobile-menu {
@@ -189,6 +192,14 @@ nav {
       .topo1 {
         display: none;
       }
+
+    .banner-mobile{
+        display: block;
+    }
+
+    .banner-desktop {
+        display: none;
+    }
 }
 
 .nav-list.active {
@@ -386,6 +397,30 @@ nav {
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.400);
 }
 
+.cont-stats {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.stats {
+    background-color: #F0F0F0;
+    color: #FA3328;
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 20px;
+}
+
+.valor {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.ref {
+    font-size: 0.7em;
+}
+
 @media screen and (max-width: 1440px) {
     .conheca {
         height: 760px;
@@ -407,7 +442,7 @@ nav {
         padding: 30px 0;
     }
 
-    .conheca div {
+    .cont-conheca {
         width: 80%;
     }
 
