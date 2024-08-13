@@ -145,10 +145,13 @@ nav {
 }
 
 .banner img {
-    width: 80%;
-    max-width: 1440px;
+    width: 100%;
+    max-width: 1920px;
 }
 
+.banner-mobile {
+    display: none;
+}
 /* Menu hamburguer */
 
 .mobile-menu {
@@ -189,6 +192,14 @@ nav {
       .topo1 {
         display: none;
       }
+
+    .banner-mobile{
+        display: block;
+    }
+
+    .banner-desktop {
+        display: none;
+    }
 }
 
 .nav-list.active {
@@ -222,171 +233,66 @@ nav {
     Fim do cabeçalho
 ****************************/
 
-.red {
-    color: #EF4136;
-}
-
-/* Estilo do conteudo */
+/* Estilo conteúdo */
 
 .conteudo {
-    padding: 50px 0;
-}
-
-/* Título */
-
-.titulo {
-    max-width: 380px;
-    width: 380px;
-    text-align: center;
-    margin: 0 auto 30px;
-}
-
-.titulo h1 {
-    font-size: 1.6em;
-    color: #015EC6;
-}
-
-.title-line {
-    position: relative;
-    width: 1920px;
-    height: 2px;
-    background-color: #EF4136;
-    border: none;
-    left: 61%;
-    z-index: -1;
-}
-
-@media screen and (max-width: 900px) {
-    .titulo h1 {
-        font-size: 1.2em;
-    }
-
-    .title-line {
-        left: 58%;
-    }
-}
-
-/* Texto */
-
-.txt {
     width: 80%;
-    max-width: 920px;
-    margin: 0 auto 30px;
-}
-
-.txt p {
-    font-size: 1em;
-    color: #3C3C3C;
-    margin-bottom: 30px;
-    font-weight: bold;
-    text-align: justify;
-    line-height: 24px;
-}
-
-/******************** 
-    Fim estilo texto
-*********************/
-
-/* Estilo dos cards */
-
-.cards {
-    width: 80%;
-    max-width: 1400px;
+    max-width: 1440px;
     margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    font-family: 'Roboto';
 }
-
-.card {
-    background-color: #015EC6;
-    width: 400px;
-    border-radius: 20px;
-    padding-bottom: 30px;
-    margin: 60px 30px 0;
-}
-
-.icone {
-    position: relative;
-    left: 50%;
-    transform: translateX(-42px);
-    top: -40px;
-    background-color: #002A5F;
-    width: 80px;
-    height: 80px;
-    border-radius: 45px;
-    text-align: center;
-    align-content: center;
-    box-shadow: 3px 1px white;
-}
-
-.icone img {
-    width: 60px;
-}
-
-.card-txt {
-    max-width: 320px;
-    width: 90%;
-    margin: auto;
-    color: white;
-}
-
-.card-txt h3 {
-    text-align: center;
-    margin: -30px 0 20px;
-    font-size: 1.2em;
-}
-
-.card-txt p {
-    font-size: 1em;
-    line-height: 24px;
-    text-align: justify;
-    font-weight: bold;
-}
-
-@media screen and (max-width: 900px) {
-    .card {
-        margin: 60px 0 0;
-    }
-}
-
-.box-line {
-    width: 380px;
-    margin: 15px auto 0;
-}
-
-.line {
-    position: relative;
-    width: 1920px;
-    height: 2px;
-    background-color: #EF4136;
-    border: none;
-    transform: translateX(-100%);
-}
-
-@media screen and (max-width: 1149px) {
-    .line {
-        transform: translateX(-90%);
-    }
-}
-
-/******************** 
-    Fim estilo cards
-*********************/
 
 .lgpd {
-    display: block;
-    max-width: 920px;
-    width: 80%;
-    margin: 30px auto 0;
+    margin-bottom: 50px;
+}
+
+.titulo {
+    font-size: 1.2em;
+    text-align: center;
+    margin: 30px 0;
+}
+
+article {
+    margin: 40px 0;
+}
+
+article p {
+    margin: 0 0 10px;
+}
+
+.list {
+    padding-left: 20px;
+}
+
+table {
+    width: 90%;
+    margin: auto;
+    border: 1px solid black;
+}
+
+table td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+table p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.table-title {
+    font-size: 1em;
     text-align: center;
 }
 
-.lgpd a {
-    text-decoration: underline;
-    color: #EF4136;
-    font-weight: bold;
-    text-decoration-thickness: 2px;
+@media screen and (max-width: 900px) {
+    .conteudo {
+        width: 90%;
+    }
+
+    table {
+        width: 100%;
+    }
 }
 
 /* Estilo rodapé */

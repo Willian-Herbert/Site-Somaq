@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./estilos/ponto.css">
+    <link rel="stylesheet" href="./estilos/cookies.css">
     <link rel="stylesheet" href="./estilos/carrossel-3itens.css">
     <link rel="shortcut icon" href="./img/logos/logosmq.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,9 +13,23 @@
     <script defer src="./script/mobile-navbar.js"></script>
     <script defer src="./script/envio-form.js"></script>
     <script defer src="./script/carrossel-3itens.js"></script>
+    <script defer src="./script/cookies.js"></script>
     <title>Somaq Automação</title>
 </head>
 <body>
+
+    <div class="cookies-msg" id="cookies-msg">
+        <div class="cookies-txt">
+            <p>
+                Este site usa cookies e tecnologias afins, que são pequenos arquivos ou pedaços de texto baixados para um aparelho quando o visitante acessa um website ou aplicativo. Ao utilizar nosso site você está de acordo com a utilização dos cookies para te proporcionar uma melhor experiência.
+            </p>
+
+            <div class="cookies-btn">
+                <button onclick="aceito()">Aceito</button>
+            </div>
+        </div>
+    </div>
+
     <header>
         <section class="topo1">
             <div class="cont-top1">
@@ -33,7 +48,7 @@
 
         <section class="topo2">
             <nav>
-                <a class="logo" href="/">
+                <a class="logo" href="./index.html">
                   <img src="./img/logos/logosomaq.svg">
                   <hr class="logo-line">
                 </a>
@@ -172,7 +187,7 @@
             </div>
         </div>
         <div class="direitos">
-                <p>2024 | &copy; Somaq Automação | Todos os Direitos Reservados</p>
+            <p id="msg-direitos"></p>
         </div>
     </footer>
 </body>
