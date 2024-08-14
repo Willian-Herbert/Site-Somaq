@@ -278,7 +278,6 @@ nav {
     font-size: 1em;
     color: #3C3C3C;
     margin-bottom: 30px;
-    font-weight: bold;
     text-align: justify;
     line-height: 24px;
 }
@@ -341,7 +340,6 @@ nav {
     font-size: 1em;
     line-height: 24px;
     text-align: justify;
-    font-weight: bold;
 }
 
 @media screen and (max-width: 900px) {
@@ -385,8 +383,6 @@ nav {
 .lgpd a {
     text-decoration: underline;
     color: #EF4136;
-    font-weight: bold;
-    text-decoration-thickness: 2px;
 }
 
 /* Estilo rodapé */
