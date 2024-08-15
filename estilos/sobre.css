@@ -342,6 +342,11 @@ nav {
     text-align: justify;
 }
 
+.list-valores li {
+    list-style: disc;
+    margin: 5px 0 5px 10px;
+}
+
 @media screen and (max-width: 900px) {
     .card {
         margin: 60px 0 0;
