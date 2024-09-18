@@ -145,8 +145,11 @@ nav {
 }
 
 .banner img {
-    width: 80%;
-    max-width: 1440px;
+    width: 100%;
+}
+
+.banner-mobile {
+    display: none;
 }
 
 /* Menu hamburguer */
@@ -187,6 +190,14 @@ nav {
       }
 
       .topo1 {
+        display: none;
+      }
+
+      .banner-mobile{
+        display: block;
+      }
+
+      .banner-desktop {
         display: none;
       }
 }

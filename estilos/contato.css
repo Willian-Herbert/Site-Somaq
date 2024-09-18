@@ -145,8 +145,7 @@ nav {
 }
 
 .banner img {
-    width: 80%;
-    max-width: 1440px;
+    width: 100%;
 }
 
 /* Menu hamburguer */

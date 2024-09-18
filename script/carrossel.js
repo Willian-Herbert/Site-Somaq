@@ -16,7 +16,7 @@ setInterval(() => {
 function proximaImg(){
     cont++
 
-    if(cont > 6){
+    if(cont > radio.length){
         cont = 1
     }
 
