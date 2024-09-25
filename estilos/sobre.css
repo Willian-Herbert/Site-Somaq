@@ -102,6 +102,8 @@ nav {
     align-items: center;
     background: #015EC6;
     height: 80px;
+    position: relative;
+    z-index: 10;
 }
   
 .nav-list {

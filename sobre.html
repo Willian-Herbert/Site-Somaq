@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./estilos/sobre.css">
     <link rel="stylesheet" href="./estilos/cookies.css">
+    <link rel="stylesheet" href="./estilos/carrossel-3itens.css">
     <link rel="shortcut icon" href="./img/logos/logosmq.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +13,7 @@
     <script defer src="./script/mobile-navbar.js"></script>
     <script defer src="./script/envio-form.js"></script>
     <script defer src="./script/cookies.js"></script>
+    <script defer src="./script/carrossel.js"></script>
     <title>Somaq Automação</title>
 </head>
 <body>
@@ -64,10 +66,35 @@
               </nav>
         </section>
 
-        <figure class="banner">
-            <img class="banner-desktop" src="./img/banners/bannersistema.svg" alt="Banner">
-            <img class="banner-mobile" src="./img/banners/bannersistema_mobile.svg" alt="Banner">
-        </figure>
+        <section class="slider">
+            <div class="slider-content">
+
+                <input type="radio" name="btn-radio" id="radio1">
+                <input type="radio" name="btn-radio" id="radio2">
+
+                <div class="slide-box primeiro">
+                    <img class="img-desktop" src="./img/banners/sobre/c1.svg">
+                    <img class="img-mobile" src="./img/banners/sobre/mc1.svg">
+                </div>
+
+                <div class="slide-box">
+                    <img class="img-desktop" src="./img/banners/sobre/c2.svg">
+                    <img class="img-mobile" src="./img/banners/sobre/mc2.svg">
+                </div>
+
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                </div>
+
+                <div class="nav-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                </div>
+
+            </div>
+        </section>
+
     </header>
 
     <main class="conteudo">

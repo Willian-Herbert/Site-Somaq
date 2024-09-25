@@ -343,7 +343,7 @@ textarea::placeholder {
     color: white;
 }
 
-button {
+form button {
     width: 60%;
     height: 52px;
     border-radius: 30px;
