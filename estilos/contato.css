@@ -100,7 +100,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: #015EC6;
+    background: #0d3e74;
     height: 80px;
 }
   
@@ -162,6 +162,10 @@ nav {
     margin: 8px;
 }
 
+.banner-mobile {
+    display: none;
+}
+
 @media screen and (max-width: 900px) {
     .nav-list {
         position: absolute;
@@ -187,6 +191,14 @@ nav {
 
       .topo1 {
         display: none;
+      }
+
+      .banner-desktop {
+        display: none;
+      }
+
+      .banner-mobile {
+        display: block;
       }
 }
 
