@@ -3,13 +3,49 @@
     padding: 20px;
     border-radius: 50%;
     position: fixed;
-    bottom: 40px;
     right: 40px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.400);
     text-align: center;
     align-content: center;
+    transition: scale 0.3s;
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: 10;
+}
+
+.iconewhatsapp a:hover {
+    cursor: pointer;
+    scale: 0.9;    
 }
 
 .iconewhatsapp img {
     width: 40px;
+}
+
+@keyframes bounce {
+    from {
+        bottom: 40px;
+    }
+
+    to {
+        bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .iconewhatsapp a {
+        right: 10px;
+    }
+
+    @keyframes bounce {
+        from {
+            bottom: 15px;
+        }
+
+        to {
+            bottom: 5px;
+        }
+    }
 }

@@ -172,7 +172,7 @@ nav {
         right: 0;
         width: 100vw;
         height: 60vh;
-        background: #015EC6;
+        background: #0d3e74;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
@@ -355,7 +355,7 @@ h1 {
 
 .cont-sistema img {
     max-height: 220px;
-    max-width: 614px;
+    max-width: 448px;
     width: 100%;
 }
 
