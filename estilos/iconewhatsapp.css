@@ -1,0 +1,15 @@
+.iconewhatsapp a {
+    background-color: #25D366;
+    padding: 20px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.400);
+    text-align: center;
+    align-content: center;
+}
+
+.iconewhatsapp img {
+    width: 40px;
+}
